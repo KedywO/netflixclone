@@ -1,0 +1,21 @@
+.banner{
+    color: white;
+    object-fit: contain;
+    height: 500px;
+    width: auto;
+    background-position: center center;
+
+
+
+}
+
+.test{
+
+}
+
+.banner::-webkit-scrollbar{
+    display: none;
+}
+
+
+
