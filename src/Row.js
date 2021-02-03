@@ -18,15 +18,18 @@ export default function Row({title, fetchUrl, isLargeRow}) {
 
     },[fetchUrl])
 
-
     return (
         <div className="row">
             <h2 className="row-title">{title}</h2>
             <div className="row-posters">
                 {movies.map(movie => (
-                    <img className={isLargeRow ? "row-posters-posterL" : "row-posters-poster"} key={movie.id} src={`${base_url}${isLargeRow ? movie.poster_path: movie.backdrop_path}`} alt={movie.name} />
-                ))}
+                    <span className="test">
 
+                        <img className={isLargeRow ? "row-posters-posterL" : "row-posters-poster"} key={movie.id} src={`${base_url}${isLargeRow ? movie.poster_path: movie.backdrop_path}`} alt={movie.name} />
+                        <p className={isLargeRow ? "test1L" : "test1"}>{movie.name || movie.original_name || movie.title}</p>
+
+                        </span>
+                ))}
             </div>
 
             {/*conteiner -> posters*/}

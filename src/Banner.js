@@ -20,6 +20,7 @@ export default function Row({fetchUrl}) {
         }
         fetchData();
     }, []);
+    console.log(movie);
 
     return (
         <div className="test">
@@ -28,9 +29,16 @@ export default function Row({fetchUrl}) {
             backgroundSize: 'cover',
             backgroundImage: `url(
         "https://image.tmdb.org/t/p/original/${movie?.backdrop_path}"
-        )`,
+        )`,}}>
+            <span className="banner-movie-info">
+                <span className="banner-movie-name">{movie.name}</span>
+                <span className="buttons-span">
+                <button className="banner-button1">Play</button>
+                <button className="banner-button2">Trailer</button>
+                </span>
+                <span className="banner-desc">{movie.overview}</span>
 
-        }}>
+            </span>
 
 
 

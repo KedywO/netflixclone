@@ -2,20 +2,60 @@
     color: white;
     object-fit: contain;
     height: 500px;
-    width: auto;
+    width: 100%;
     background-position: center center;
-
-
-
-}
-
-.test{
-
 }
 
 .banner::-webkit-scrollbar{
     display: none;
 }
 
+.banner-movie-info{
+    display: grid;
+    height: 500px;
+    width: 300px;
+    justify-content: left;
+    align-content: center;
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    margin-left: 20px;
+    padding: 0 15px 0 15px;
+
+    background-color: rgba(51, 51, 51, 0.4);
 
 
+}
+.banner-movie-name{
+    grid-column: 1 / -1;
+    text-align: left;
+    font-size: 36px;
+    font-weight: 700;
+}
+.buttons-span{
+    text-align: left;
+}
+
+.buttons-span > button{
+    margin-right: 10px;
+    background-color: rgba(49, 48, 48, 0.8);
+    color: white;
+    border-width: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.buttons-span > button:hover{
+    background-color: rgba(56, 54, 54, 1);
+    transform: scale(1.1) translateZ(0);
+
+}
+.banner-desc{
+    grid-column: 1 / -1;
+    text-align: justify;
+    font-size: 13px;
+    font-weight: 700;
+}

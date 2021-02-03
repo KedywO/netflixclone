@@ -7,7 +7,7 @@ export default function Nav(){
 
     useEffect(()=>{
         window.addEventListener("scroll",()=> {
-            if(window.scrollY > 200){
+            if(window.scrollY > 50){
                 handleShow(true);
             }else handleShow(false);
         });
